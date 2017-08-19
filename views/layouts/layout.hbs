@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>DOCTOR - Responsive HTML &amp; Bootstrap Template</title>
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<script src="/js/modernizr.js"></script>
+	<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+	<!-- ====================================================
+	header section -->
+	<header class="top-header" style="padding-bottom:0px">
+		<div class="container" style="padding-bottom:0px">
+			<div class="row">
+				<div class="col-xs-3 header-logo">
+					<br>
+					<a href="/"><img src="/img/logo.jpg" style="height: 100px; width: 110px" alt="" class="img-responsive logo"></a>
+				</div>
+
+				<div class="col-md-9">
+					<nav class="navbar navbar-default">
+						<div class="container-fluid nav-bar">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+							</div>
+
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+								<ul class="nav navbar-nav navbar-right">
+									<li><a class="menu active" href="/">Accueil</a></li>
+									<li><a class="menu" href="/produits">Nos Produits</a></li>
+									<li><a class="menu" href="/services">Nos Services</a></li>
+									<li><a class="menu" href="/about">Qui Somme-Nous?</a></li>
+									<li><a class="menu" href="#contact"> Contactez-nous</a></li>
+								</ul>
+							</div>
+							<!-- /navbar-collapse -->
+						</div>
+						<!-- / .container-fluid -->
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end of header area -->
+	{{{body}}}
+	<!-- map section -->
+	<div class="api-map" id="contact">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12" id="map"></div>
+			</div>
+		</div>
+	</div>
+	<!-- end of map section -->
+	<!-- contact section starts here -->
+	<section class="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-caption clearfix">
+					<div class="contact-heading text-center">
+						<h2>contacter nous</h2>
+					</div>
+					<div class="col-md-5 contact-info text-left">
+						<h3>contact information</h3>
+						<div class="info-detail">
+							<ul>
+								<li><i class="fa fa-calendar"></i><span>lundi - Vendredi:</span> de 8h:00 à 12h:00 - de 14h:00 à 18h:00</li>
+							</ul>
+							<ul>
+								<li><i class="fa fa-map-marker"></i><span>Addresse:</span> 91, Impasse Halima Saadia Hay Ezzahra - BP: 237 BERRECHID
+									<li>
+							</ul>
+							<br>
+							<ul>
+								<li><i class="fa fa-phone"></i><span>Téléphone:</span> 05 22 53 42 26 / 05 53 42 27</li>
+							</ul>
+							<ul>
+								<li><i class="fa fa-fax"></i><span>Fax:</span> 05 22 53 42 28</li>
+							</ul>
+							<ul>
+								<li><i class="fa fa-envelope"></i><span>Email:</span> infoellouzi@gmail.com</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-md-offset-1 contact-form">
+						<h3>laissez nous un message</h3>
+
+						<form class="form">
+							<input class="name" type="text" placeholder="Nom">
+							<input class="email" type="email" placeholder="Email">
+							<input class="phone" type="text" placeholder="N Tel">
+							<textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+							<input class="submit-btn" type="submit" value="SUBMIT">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end of contact section -->
+
+	<!-- footer starts here -->
+	<footer class="footer clearfix">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 footer-para">
+					<p>&copy;Ellouzi All right reserved</p>
+				</div>
+				<div class="col-xs-6 text-right">
+					<a href=""><i class="fa fa-facebook"></i></a>
+					<a href=""><i class="fa fa-twitter"></i></a>
+					<a href=""><i class="fa fa-skype"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script src="js/gmaps.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script>
+		function myMap() {
+			var mapProp = {
+				center: new google.maps.LatLng(51.508742, -0.120850),
+				zoom: 5,
+			};
+			var map = new google.maps.Map(document.getElementById("map"), mapProp);
+		}
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDElfNq8fYi1zntFLpUHl-stcohFpDMnmI&callback=myMap"></script>
+</body>
+
+</html>
